@@ -1,5 +1,8 @@
 package curriculum_A;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Qes1_13 {
 
 	public static void main(String[] args) {
@@ -50,6 +53,48 @@ public class Qes1_13 {
 		int num = 20;
 		int num1 = 23;
 		System.out.println("ハローJAVA" + (num + num1));
+		
+		// 6
+		String name = "山田太郎";
+		int age = 18;
+		float height = 170.5f;
+		float weight = 62.2f;
+		String like = "寿司";
+		
+		System.out.println("「初めまして" + name + "です」");
+		System.out.println("「年齢は" + age + "歳です」");
+		System.out.println("「身長は" + height + "cmです」");
+		System.out.println("「体重は" + weight + "kgです」");
+		System.out.println("「好きな食べ物は" + like + "です」");
+		
+		// 7
+		
+		float heightM = height / 100;
+		float bmi = weight / heightM / heightM;
+		BigDecimal beforebmi = new BigDecimal(bmi);
+		BigDecimal afterbmi = beforebmi.setScale(1, RoundingMode.HALF_UP);
+		System.out.println("BMIは" + afterbmi + "です");
+		
+		// 8
+		name = "鈴木一郎";
+		age = 24;
+		height = 168.5f;
+		weight = 64.2f;
+		like = "オムライス";
+		heightM = height / 100;
+		bmi = weight / heightM / heightM;
+	    beforebmi = new BigDecimal(bmi);
+		afterbmi = beforebmi.setScale(1, RoundingMode.HALF_UP);
+		
+		System.out.println("初めまして" + name + "です");
+		System.out.println("年齢は" + age + "歳です");
+		System.out.println("身長は" + height + "cmです");
+		System.out.println("体重は" + weight + "kgです");
+		System.out.println("好きな食べ物は" + like + "です");
+		System.out.println("BMIは" + afterbmi + "です");
+		
+		// 9
+
 	}
 
 }
