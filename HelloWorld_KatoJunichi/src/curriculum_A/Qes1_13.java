@@ -103,28 +103,31 @@ public class Qes1_13 {
 		
 		// 9
 		
-		int age2 = age + 24;
-		float height2 = height + 168.5f;
-		float weight2 = weight + 64.2f;
-		float heightM2 = height2 / 100;
-		float bmi2 = weight2 / heightM2 / heightM2;
+		age += 24;
+		height += 168.5f;
+		weight += 64.2f;
+		float heightM2 = height / 100;
+		float bmi2 = weight / heightM2 / heightM2;
 	    beforeBmi = new BigDecimal(bmi2);
 		afterBmi = beforeBmi.setScale(2, RoundingMode.HALF_UP);
 		
 		System.out.println("初めまして" + name + "です");
-		System.out.println("年齢は" + age2 + "歳です");
-		System.out.println("身長は" + height2 + "cmです");
-		System.out.println("体重は" + weight2 + "kgです");
+		System.out.println("年齢は" + age + "歳です");
+		System.out.println("身長は" + height + "cmです");
+		System.out.println("体重は" + weight + "kgです");
 		System.out.println("好きな食べ物は" + like + "です");
 		System.out.println("BMIは" + afterBmi + "です");
 		
 		// 10
 		
-		boolean checkAge = (age > 25);
+		age = 24;
+		boolean checkAge = (age >= 25);
 		System.out.println(checkAge);
 		
 		// 11
 		
+		height = 168.5f;
+		weight = 64.2f;
 		String stAge = String.valueOf(age);
 		String stHeight = String.valueOf(height);
 		String stWeight = String.valueOf(weight);
