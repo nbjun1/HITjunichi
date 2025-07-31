@@ -77,7 +77,7 @@ public class Qes1_3 {
 		    	System.out.println();
 		    }
 		    else {
-		    	loopFlg = false; //
+		    	loopFlg = false; //引き分け、cpuの勝利以外でfalseにフラグ切り替え
 		    	System.out.println("やるやん。\n次は俺にリベンジさせて");
 		    	System.out.println();
 		    }
