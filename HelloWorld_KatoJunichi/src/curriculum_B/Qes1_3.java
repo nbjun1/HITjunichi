@@ -83,7 +83,7 @@ public class Qes1_3 {
 		    }
 		    
 		
-		} while(loopFlg);  //booleanでループ管理ユーザー勝利した時にフラグがfalseになりループ終了
+		} while(loopFlg);  //booleanでループ管理、ユーザー勝利時にフラグがfalseになりループ終了
 		
 		System.out.println("勝つまでにかかった回数は" + count + "回です");
 		scanner.close(); //Scannerオブジェクトを終了する
