@@ -16,7 +16,13 @@ public class Qes_4 {
 				// %02d;常に二桁の整数で出力される、
 				// ""内が出力される部分で""以降の部分が左からそれぞれ%02dに当てはまる
 				// printf()はフォーマットを指定できるメソッド
-				System.out.printf("%02d * %02d = %02d || ", (i+1), (j+1), multiplicationTable[i][j]);
+				
+				if (j == 8) {
+					System.out.printf("%02d * %02d = %02d ", (i+1), (j+1), multiplicationTable[i][j]);
+				} else {
+					System.out.printf("%02d * %02d = %02d || ", (i+1), (j+1), multiplicationTable[i][j]);
+				}
+			
 			}
 			System.out.println();
 		}
