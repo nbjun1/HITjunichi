@@ -66,7 +66,7 @@ public class Curriculum_New_1_18 {
 	/**
 	 * 引数の整数分ランダムな1から100までの整数をランダム生成して格納し、出力するメソッド
 	 * @param count 整数を生成する回数
-	 * @return 戻り値(整数配列)
+	 * @return 整数リスト
 	 */
 	private static List<Integer> random(int count) {
 		Random random = new Random();
@@ -85,8 +85,8 @@ public class Curriculum_New_1_18 {
 	// ※小数点以下も表示されるようにしてください。
 	/**
 	 * 受け取った整数配列の平均値をコンソールに出力するメソッド
-	 * @param numberList Q5で生成された整数配列
-	 * @return 戻り値(平均値)
+	 * @param numberList Q5で生成された整数リスト
+	 * @return 平均値
 	 */
 	private static double average(List<Integer> numberList) {
 		double sum = 0;
