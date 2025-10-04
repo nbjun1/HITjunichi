@@ -1,3 +1,5 @@
+package main;
+
 import java.util.Scanner;
 
 import logic.Animal;
@@ -5,7 +7,6 @@ import logic.Animal;
 public class Main {
 
 	public static void main(String[] args) {
-
 		System.out.println("コンソールに文字を入力してください");
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
@@ -51,6 +52,7 @@ public class Main {
             System.out.println("速度：" + animal.getSpeed() + "km/h");
             System.out.println("学名：" + animal.getScientificName());
         }
+
 	}
 
 }
