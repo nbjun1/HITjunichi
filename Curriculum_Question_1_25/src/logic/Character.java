@@ -19,7 +19,7 @@ public class Character {
 		
 		public void setName(String name) { this.name = name; }
 		public void setHp(int hp) { this.hp = hp; }
-		public void setMp(int mp) { this.hp = mp; }
+		public void setMp(int mp) { this.mp = mp; }
 		public void setAttack(int attack) { this.attack = attack; }
 		public void setSpeed(int speed) { this.speed = speed; }
 		public void setDefense(int defense) { this.defense = defense; }
